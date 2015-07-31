@@ -1,5 +1,5 @@
 FROM sillelien/jessy:0.2
-MAINTAINER support@tutum.co
+# MAINTAINER support@tutum.co
 RUN apt-get update && apt-get install -y python-pip && pip install tutum
 ADD http://download-lb.utorrent.com/endpoint/btsync/os/linux-x64/track/stable /usr/bin/btsync.tar.gz
 RUN cd /usr/bin && tar -xzvf btsync.tar.gz && rm btsync.tar.gz
